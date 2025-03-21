@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiel!</title>
+    <link rel="stylesheet" href="./Schere_Stein_Papier.css">
+    <script src="./Schere_Stein_Papier.js" defer></script>
+</head>
+<body>
+
+    <div class="anzeige" id="erster_block">
+        <h1>Schere Stein Papier</h1>
+        <p><b>Regeln:</b> Bei Unentschieden ein weiterer Versuch</p>
+        <h3 id="start" onclick="startGame();">Klicken Spiel Starten!</h3>
+    </div>
+    <div id="block">
+        <div class="bereich"  id="playerschoice">
+            <div id="choice">
+                <h2>Auswahl:</h2>
+                <button type="submit" id="stein"><img src="./emoji/Alex_Kidd_Rock.png" alt="stein"></button>
+                <button type="submit" id="papier"><img src="./emoji/Alex_Kidd_Paper.png" alt="papier"></button>
+                <button type="submit" id="schere"><img src="./emoji/Alex_Kidd_Scissor.png" alt="schere"></button>
+            </div>
+        </div>
+        <div id="ergebnisfeld">
+            <div id="ergebnis">
+                <h2>Ergebnis:</h2>
+                <div class="punkte">
+                    COMPUTER <span id="computerPunkte">0</span> /
+                    PLAYER <span id="playerPunkte">0</span>
+                </div>
+                
+                <div class="ergebnisfeldEins" >
+                    <img id="eins" src="./emoji/Alex_Kidd_Dance.gif">
+                </div>
+                <div id="result"></div>
+                <div class="ergebnisfeldZwei" >
+                    <img id="zwei" class="flip()"src="./emoji/Alex_Kidd_Dance.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+        
+    
+    
+</body>
+</html>
